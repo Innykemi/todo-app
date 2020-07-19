@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluwakemi's ToDo App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">ToDo App</h1>
+    </header>
+    <main>
+        <section id="todo-add">
+            <div class="row">
+                <div id="form-field">
+                    <input type="text" id="todo-title" placeholder="Title"/>
+                </div>
+                <div id="form-field">
+                    <textarea rows="10" id="description" placeholder="Description"></textarea>
+                </div>
+                <button type="submit" onclick="save();">Save</button>
+                <!-- <button type="submit" onclick="loadTitle();">Title</button>
+                <button type="submit" onclick="loadDescription();">Description</button> -->
+            </div>
+        </section>
+        <section id="todo-list">
+            <div class="row">
+                <h1>List</h1>
+                <p id="exceed20"></p>
+                <table cellpadding="15px">
+                    <thead>
+                        <tr>
+                            <td>Title</td>
+                            <td>Description</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </thead>
+                    <tbody  id="myTodoList">
+                        <!-- <tr>
+                            <td id="title-item"> </td>
+                            <td id="description-item"> </td>
+                            <td id="clear()"> x </td>
+                        </tr>
+                        <tr>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                            <td> x </td>
+                        </tr>
+                        <tr>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>x</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/todo.js"></script> -->
+</body>
+</html>
